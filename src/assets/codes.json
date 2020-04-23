@@ -1,0 +1,21 @@
+[
+  {
+    "value": 3296,
+    "prerequisite": "56",
+    "reward": "Y"
+  },
+  {
+    "value": 1275,
+    "prerequisite": "77",
+    "reward": "10"
+  },
+  {
+    "value": 8475,
+    "prerequisite": "F"
+  },
+  {
+    "value": 1234,
+    "prerequisite": "44",
+    "reward": "20"
+  }
+]

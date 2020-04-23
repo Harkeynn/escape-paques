@@ -1,0 +1,251 @@
+[
+  {
+    "value": "1",
+    "title": "Salon",
+    "background": "rooms/living-room.jpg",
+    "landscape": true
+  },
+  {
+    "value": "B",
+    "title": "Chambre",
+    "background": "rooms/bedroom.jpg",
+    "landscape": true,
+    "parent": "1",
+    "x": "600",
+    "y": "350"
+  },
+  {
+    "value": "C",
+    "title": "Couloir",
+    "background": "rooms/hall.jpg",
+    "parent": "1",
+    "x": "450",
+    "y": "200"
+  },
+  {
+    "value": "12",
+    "type": "red-clue",
+    "title": "Une bouteille",
+    "subtitle": "On aperçoit au fond une clef reliée à un bouchon en liège.",
+    "background": "props/key-in-bottle.jpg",
+    "parent": "1",
+    "x": "255",
+    "y": "220"
+  },
+  {
+    "value": "33",
+    "type": "blue-clue",
+    "result": "81",
+    "title": "De longues baguettes",
+    "background": "props/sticks.jpg",
+    "landscape": true,
+    "parent": "1",
+    "x": "50",
+    "y": "310"
+  },
+  {
+    "value": "16",
+    "type": "blue-clue",
+    "result": "21",
+    "title": "Une clé",
+    "subtitle": "Ni trop grande, ni trop petite.",
+    "background": "keys/first-cupboard-key.jpg",
+    "withdraw": ["12", "4"]
+  },
+  {
+    "value": "5",
+    "type": "red-clue",
+    "title": "Un premier placard",
+    "subtitle": "Il est fermé à clef, la serrure est de taille normale.",
+    "background": "chests/first-cupboard-closed.jpg",
+    "parent": "1",
+    "x": "350",
+    "y": "160"
+  },
+  {
+    "value": "21",
+    "title": "L'intérieur du premier placard",
+    "background": "chests/first-cupboard.jpg",
+    "withdraw": ["5", "16"]
+  },
+  {
+    "value": "48",
+    "type": "red-clue",
+    "title": "Une vis instable",
+    "subtitle": "Une vis se déchasse pour laisser apparaître un petit trou qui donne sur le deuxième placard.",
+    "background": "chests/hole.jpg",
+    "parent": "21",
+    "x": "10",
+    "y": "310"
+  },
+  {
+    "value": "22",
+    "title": "Un deuxième placard",
+    "subtitle": "Il est fermé de l'intérieur.",
+    "background": "chests/second-cupboard-closed.jpg",
+    "parent": "1",
+    "x": "310",
+    "y": "140"
+  },
+  {
+    "value": "81",
+    "title": "L'intérieur du second placard",
+    "subtitle": "Il contient toutes sortes d'aliments.",
+    "background": "chests/second-cupboard.jpg",
+    "withdraw": ["22", "33", "48"]
+  },
+  {
+    "value": "56",
+    "type": "code",
+    "title": "Un troisième placard",
+    "subtitle": "Il est fermé par un cadenas à code.",
+    "background": "chests/third-cupboard-closed.jpg",
+    "parent": "1",
+    "x": "280",
+    "y": "155"
+  },
+  {
+    "value": "R",
+    "type": "machine",
+    "title": "Une recette de cake étrange",
+    "subtitle": "Prenez la recette du cake au roquefort.",
+    "withdraw": ["81"],
+    "parent": "81",
+    "x": "100",
+    "y": "400"
+  },
+  {
+    "value": "6",
+    "type": "red-clue",
+    "title": "Une petite boîte",
+    "subtitle": "Perchée au bord de l'armoire, il ne lui faudrait qu'un tout petit peu d'aide pour tomber.",
+    "background": "chests/perched-box.jpg",
+    "parent": "B",
+    "x": "330",
+    "y": "40"
+  },
+  {
+    "value": "77",
+    "type": "code",
+    "title": "Une boîte en métal",
+    "subtitle": "Elle est fermée par un cadenas à code. Étrangement, elle dégage une forte odeur de fromage.",
+    "background": "chests/ammo-box-closed.jpg",
+    "parent": "B",
+    "x": "510",
+    "y": "410",
+    "hidden": true
+  },
+  {
+    "value": "10",
+    "type": "blue-clue",
+    "result": "38",
+    "title": "Des fléchettes nerf",
+    "background": "props/ammo.jpg",
+    "withdraw": ["R", "77"]
+  },
+  {
+    "value": "88",
+    "type": "blue-clue",
+    "result": "99",
+    "title": "Une grande clef",
+    "subtitle": "Sous le paillasson, bien évidemment...",
+    "background": "keys/bathroom-key.jpg",
+    "parent": "C",
+    "x": "219",
+    "y": "400",
+    "hidden": true
+  },
+  {
+    "value": "11",
+    "type": "red-clue",
+    "title": "La porte de la salle de bain",
+    "subtitle": "Elle est fermée à clef, sa serrure est plutôt grande.",
+    "background": "rooms/bathroom-door.jpg",
+    "parent": "C",
+    "x": "70",
+    "y": "350"
+  },
+  {
+    "value": "F",
+    "type": "code",
+    "title": "La porte du placard",
+    "subtitle": "Vous sentez qu'il y a quelque chose dans ce placard. Malheureusement pour vous, il est fermé par un cadenas décoré d'oeufs de toutes les couleurs.",
+    "background": "chests/closet.jpg",
+    "parent": "C",
+    "x": "320",
+    "y": "250"
+  },
+  {
+    "value": "99",
+    "title": "La salle de bain",
+    "background": "rooms/bathroom.jpg",
+    "withdraw": ["11", "88"]
+  },
+  {
+    "value": "14",
+    "type": "red-clue",
+    "title": "Le placard de la salle de bain",
+    "subtitle": "Il est fermé à clef. Sa serrure est vraiment petite.",
+    "background": "chests/bathroom-closet.jpg",
+    "parent": "99",
+    "x": "350",
+    "y": "300"
+  },
+  {
+    "value": "28",
+    "type": "red-clue",
+    "title": "Un pistolet nerf",
+    "background": "props/nerf-empty.jpg",
+    "parent": "99",
+    "x": "50",
+    "y": "350"
+  },
+  {
+    "value": "38",
+    "type": "blue-clue",
+    "result": "44",
+    "title": "Un pistolet nerf chargé",
+    "background": "props/nerf-loaded.jpg",
+    "withdraw": ["28", "10"]
+  },
+  {
+    "value": "44",
+    "type": "machine",
+    "title": "Faites tomber la boîte !",
+    "background": "chests/perched-box.jpg",
+    "withdraw": ["38", "6"]
+  },
+  {
+    "value": "20",
+    "type": "blue-clue",
+    "result": "34",
+    "title": "Une petite clef",
+    "background": "keys/bathroom-closet-key.jpg",
+    "withdraw": ["44"]
+  },
+  {
+    "value": "34",
+    "type": "machine",
+    "title": "L'intérieur du placard de la salle de bain",
+    "subtitle": "Regardez à l'intérieur du placard.",
+    "withdraw": ["14", "20"]
+  },
+  {
+    "value": "Y",
+    "type": "machine",
+    "title": "L'intérieur du troisième placard",
+    "subtitle": "Regardez dans le placard.",
+    "withdraw": ["21", "34", "56"]
+  },
+  {
+    "value": "4",
+    "type": "blue-clue",
+    "result": "16",
+    "title": "Un évier",
+    "subtitle": "Bien moins encombré que celui de la cuisine",
+    "background": "props/sink.jpg",
+    "parent": "99",
+    "x": "300",
+    "y": "200"
+  }
+]
